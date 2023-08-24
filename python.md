@@ -3,7 +3,7 @@ https://geekhub.ck.ua/
 
 [[GeekHub S13 python description]]
 
-Syntax
+### Syntax
 ```python
 snake_case = ""
 SNAKE_CASE = ""
@@ -41,7 +41,7 @@ dog = Dog("dog name")
 
 print(dog.name())
 ```
-Datatypes
+### Datatypes
 ```python
 int
 1,2,3
@@ -71,28 +71,26 @@ dict
 range
 range(6) #=> range(0, 6)
 ```
-Operations?
-Functions
-Classes (basic)
-Files
+### Operations?
+### Functions
+### Classes (basic)
+### Files
 
-# Test
+### Git
 
-Git
+### OOP
+### Simplest patterns
+### OOP patterns: DRY, KISS, SOLID
 
-OOP
-Simplest patterns
-OOP patterns: DRY, KISS, SOLID
+### Regexp
+### Exception handling (try -> catch)
+### Modules
+### Generators?
+### Multithreading
+### GIL?
+### Virtualenv +-?
+### PEP8 codestyle
+### unit test
+### py.test
 
-Regexp
-Exception handling (try -> catch)
-Modules
-Generators?
-Multithreading
-GIL?
-Virtualenv +-?
-PEP8 codestyle
-unit test
-
-py.test
-Scrapping: basic requests, scrappy
+### Scrapping: basic requests, scrappy
