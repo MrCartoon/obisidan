@@ -3,6 +3,7 @@ https://geekhub.ck.ua/
 
 [[GeekHub S13 python description]]
 
+## 1
 ### Syntax
 ```python
 snake_case = ""
@@ -76,12 +77,15 @@ range(6) #=> range(0, 6)
 ### Classes (basic)
 ### Files
 
+## 2
 ### Git
 
+## 3
 ### OOP
 ### Simplest patterns
 ### OOP patterns: DRY, KISS, SOLID
 
+## 4
 ### Regexp
 ### Exception handling (try -> catch)
 ### Modules
@@ -93,4 +97,5 @@ range(6) #=> range(0, 6)
 ### unit test
 ### py.test
 
+## 5
 ### Scrapping: basic requests, scrappy
