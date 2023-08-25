@@ -106,14 +106,14 @@ range(6) #=> range(0, 6)
 - В методі `age` розрахувати скільки вам років і повернути `String` у наступному формат: `Я живу 23 років, або 8721 днів, або 209320 годин, або 12559226 хвилин, або 753553635 секунд`
 - Реалізувати метод `(name)` який буде зчитувати ПІБ з клавіатури та повертити `String` у форматі: `Hello Alex Super Man!`
 ```python
-class Lesson1
-    def sum(self, val)
+class Lesson1:
+    def sum(self, val):
         # TODO
 
-    def age(self, birthday)
+    def age(self, birthday):
         # TODO
 
-    def name
+    def name():
         # TODO
 ```
 
@@ -134,49 +134,49 @@ class Lesson1
 - Метод який повертає масив, який містить елементи, що передують найменшому елементу
 - Метод який повертає масив, який містить 3 найменші елементи
 ```python
-class MyArray
-    def __init__(self, arr)
+class MyArray:
+    def __init__(self, arr):
         self.array = arr
 
-    def size(self)
+    def size(self):
         #TODO
 
-    def reverse(self)
+    def reverse(self):
         # TODO
 
-    def max(self)
+    def max(self):
         #TODO
 
-    def min(self)
+    def min(self):
         # TODO
 
-    def desc(self)
+    def desc(self):
         #TODO
 
-    def asc(self)
+    def asc(self):
         # TODO
 
-    def odd(self)
+    def odd(self):
         #TODO
 
-    def multiple_to_three(self)
+    def multiple_to_three(self):
         # TODO
 
-    def uniq(self)
+    def uniq(self):
         #TODO
 
-    def divide_on_ten(self)
+    def divide_on_ten(self):
         #TODO
 
-    def chars(self)
+    def chars(self):
         # TODO
 
-    def switch(self)
+    def switch(self):
         #TODO
 
-    def before_min(self)
+    def before_min(self):
         # TODO
 
-    def three_smallest(self)
+    def three_smallest(self):
         # TODO
 ```
