@@ -1,0 +1,1 @@
+[[AWS Cognito|Cognito]] - user base with sign-in/sign-up/social-sign-in pages with support of custom user metadata and access control using build in roles system ^desc

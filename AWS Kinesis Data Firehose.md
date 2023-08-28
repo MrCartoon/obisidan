@@ -1,0 +1,1 @@
+[[AWS Kinesis Data Firehose|Kinesis Data Firehose]] - buffered & concatenated logs & metrics streaming ^desc

@@ -1,0 +1,1 @@
+[[AWS DynamoDB|DynamoDB]] - storing streams from [[AWS Kinesis|Kinesis]] ^desc

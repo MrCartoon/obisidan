@@ -1,0 +1,1 @@
+[[AWS CloudWatch|CloudWatch]] - service for monitoring, storing log streams & triggering "alerts" depending on metrics ^desc

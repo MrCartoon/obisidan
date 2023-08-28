@@ -1,0 +1,1 @@
+[[AWS Glue Data Catalog|Glue Data Catalog]] - [[AWS S3|S3]] "extract, transform & load" (ETL) service ([[AWS S3|S3]] files → database tables & records) ^desc

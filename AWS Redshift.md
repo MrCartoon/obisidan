@@ -1,0 +1,1 @@
+[[AWS Redshift|Redshift]] - storing streams from `Kinesis` (key feature: hi-scalable analytics DB) ^desc

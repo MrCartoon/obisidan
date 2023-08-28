@@ -1,0 +1,1 @@
+[[AWS Config|Config]] - configuration changes detection with automated triggers (automatically delete unencrypted EBS volumes, automatically remove shared access to S3) ^desc

@@ -1,0 +1,1 @@
+[[AWS Athena|Athena]] - [[AWS S3|S3]] as SQL (using [[AWS Glue Data Catalog|Glue Data Catalog]]) (used as logs querying), also allows to query other services using data connectors (redis, postgres, [[AWS DynamoDB|DynamoDB]], [[AWS CloudWatch|CloudWatch Logs]]) ^desc

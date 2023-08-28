@@ -1,0 +1,1 @@
+[[AWS Network Firewall|Network Firewall]] - firewall for transport layer (with protocol detection from application layer) ^desc

@@ -1,0 +1,1 @@
+[[AWs Trusted Advisor|Trusted Advisor]] - suggestions of AWS usage (MFA on root/public EBS snapshots/unsafe ports in SG) ^desc

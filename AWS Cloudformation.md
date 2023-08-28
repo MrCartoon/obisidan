@@ -1,0 +1,1 @@
+[[AWS Cloudformation|Cloudformation]] - automatic JSON deployment of resources to AWS ^desc

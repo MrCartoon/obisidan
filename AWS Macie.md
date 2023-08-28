@@ -1,0 +1,1 @@
+[[AWS Macie|Macie]] - monitor for [[AWS S3|S3]] that counts statistic on public, unencrypted & shared buckets with risk detection based on sensitivity of data (personal data, medical condition, bank info) ^desc

@@ -1,0 +1,1 @@
+[[AWS VPC Flow Logs|VPC Flow Logs]] - network traffic aggregation (source IP, destination IP, src port, dst port, transport protocol, size of packets) ^desc

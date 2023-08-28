@@ -1,0 +1,1 @@
+[[AWS Detective|Detective]] - aggregation and visualization of data from [[AWS CloudTrail|CloudTrail]], [[AWS VPC Flow Logs|VPC Flow Logs]] and [[AWS GuardDuty|GuardDuty]] ^desc

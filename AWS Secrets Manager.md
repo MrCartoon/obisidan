@@ -1,0 +1,1 @@
+[[AWS Secrets Manager|Secrets Manager]] - Encrypted Credentials Storage (mostly for environment variables) ^desc

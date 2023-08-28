@@ -1,0 +1,1 @@
+[[AWS Service Catalog|Service Catalog]] - extra layer on top of `Cloudformation` for projects management with Chef & Puppet integration ^desc

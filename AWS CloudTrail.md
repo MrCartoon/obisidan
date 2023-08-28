@@ -1,0 +1,1 @@
+[[AWS CloudTrail|CloudTrail]] - AWS API Audit Logs that pushed to S3 (unsuccessful logins, API requests from services) ^desc

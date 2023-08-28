@@ -1,0 +1,1 @@
+[[AWS EC2 Auto Scaling|EC2 Auto Scaling]] - [[AWS EC2|EC2]] instance auto creation & deletion depending on load (DDoS absorption) ^desc

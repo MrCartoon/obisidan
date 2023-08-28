@@ -1,0 +1,1 @@
+[[AWS GuardDuty|GuardDuty]] - passive monitoring of [[AWS S3|S3]], [[AWS VPC Flow Logs|VPC Flow Logs]], [[DNS logs]] & [[AWS CloudTrail|CloudTrail]] (security groups, MFA on root account, etc.) ^desc

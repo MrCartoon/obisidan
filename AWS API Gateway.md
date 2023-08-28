@@ -1,0 +1,1 @@
+[[AWS API Gateway|API Gateway]] - RESTful API with forwarding to ELB/Lambda (key features: endpoints configuration, authentication & authorization) ^desc

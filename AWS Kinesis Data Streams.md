@@ -1,0 +1,1 @@
+[[AWS Kinesis Data Streams|Kinesis Data Streams]] - sharded (in threads) logs & metrics streaming ^desc
