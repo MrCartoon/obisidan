@@ -71,21 +71,81 @@ dict
 range
 range(6) #=> range(0, 6)
 ```
-### Operations?
-### Functions
-### Classes (basic)
-### Files
+### Operations
+```python
+var1 = True
+var2 = False
+var3 = False
+var4 = True
 
+var1 and (var2 or var3) and var4 #=> False
+var1 and var2 or var3 and var4 #=> False
+a = [1, 2]
+b = [1, 2]
+
+a is b #=> False
+
+a == b #=> True
+```
+### Functions
+```python
+def functionName(args,namedArg=)
+	return args
+```
+### Classes (basic)
+![[python#Syntax]]
+
+### Files
+```python
+file = open(r"C:\ProgramFIles\receipt.csv") # windows
+receipt = file.read()
+file.close()
+file2 = open(r"C:\ProgramFIles\receipt2.csv", 'w')
+file2.write(receipt)
+file2.close()
+
+file3 = open('/home/ubuntu/Downloads/1.txt', 'a') # linux
+file2.writeLInes('add to the end of the file')
+file3.close()
+file4 = open('./file.txt')
+file4.read()
+file4.close()
+
+import os  
+os.remove("demofile.txt")
+```
 ## 2
 ### Git
+```bash
+git status # подивись незбережені зміни
+git add . # додати зміни в коміт
+git commit -m 'меседж' # зберегти коміт (закомітити)
+git push # запушити/завантажити в хмару (нинішню гілку)
+git pull # скачати зміни з хмари (всі гілки)
 
+git branch # вивести список гілок
+git branch name # створити нову гілку під назвою name відколовшись від активної
+git branch -D name # видалити гілку name
+git merge name # змерджити name в активну гілку
+```
 ## 3
 ### OOP
+![[python#Syntax]]
 ### Simplest patterns
 ### OOP patterns: DRY, KISS, SOLID
 
 ## 4
 ### Regexp
+```python
+str = '''23409384023 | 348734 | Product
+23409384023 | 423423 | Producttest'''
+
+
+MYREG = re.compile(r'(23409384023 \| (\d+) \| Product)+')
+print(re.findall(MYREG, str))
+
+EMAIL_REGEXP = '''(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])'''
+```
 ### Exception handling (try -> catch)
 ### Modules
 ### Generators?
@@ -178,49 +238,4 @@ class MyArray:
 
     def three_smallest(self):
         # TODO
-```
-
-
-# Logical operators
-```python
-var1 = True
-var2 = False
-var3 = False
-var4 = True
-
-var1 and (var2 or var3) and var4 #=> False
-var1 and var2 or var3 and var4 #=> False
-a = [1, 2]
-b = [1, 2]
-
-a is b #=> False
-
-a == b #=> True
-```
-
-# Git
-
-```bash
-git status # подивись незбережені зміни
-git add . # додати зміни в коміт
-git commit -m 'меседж' # зберегти коміт (закомітити)
-git push # запушити/завантажити в хмару (нинішню гілку)
-git pull # скачати зміни з хмари (всі гілки)
-
-git branch # вивести список гілок
-git branch name # створити нову гілку під назвою name відколовшись від активної
-git branch -D name # видалити гілку name
-git merge name # змерджити name в активну гілку
-```
-
-### Regexp
-```python
-str = '''23409384023 | 348734 | Product
-23409384023 | 423423 | Producttest'''
-
-
-MYREG = re.compile(r'(23409384023 \| (\d+) \| Product)+')
-print(re.findall(MYREG, str))
-
-EMAIL_REGEXP = '''(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])'''
 ```
