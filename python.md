@@ -116,6 +116,7 @@ os.remove("demofile.txt")
 ```
 ## 2
 ### Git
+https://learngitbranching.js.org/
 ```bash
 git status # подивись незбережені зміни
 git add . # додати зміни в коміт
