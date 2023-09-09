@@ -147,13 +147,88 @@ print(re.findall(MYREG, str))
 EMAIL_REGEXP = '''(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])'''
 ```
 ### Exception handling (try -> catch)
+```python
+a = None
+try:
+  a = 1/0
+  raise Exception("Facebook said 400")
+except ZeroDivisionError as error:
+  print(error)
+except TypeError as error:
+  print(error)
+  a = 0/1
+except (Error1, Error2):
+  # testcode
+  print('Error1 or Erro2')
+except:
+  print('all exceptions')
+finally:
+  print('run this anyway')
+print(a)
+```
 ### Modules
 ### Generators?
 ### Multithreading
+```python
+import threading
+import random
+import time
+
+def methodA(text, result):
+  time.sleep(random.random())
+  result.append(text)
+
+result = []
+
+threadA = threading.Thread(target=methodA,args=('A', result,))
+threadB = threading.Thread(target=methodA,args=('B', result,))
+threadB.start()
+threadA.start()
+
+threadA.join()
+threadB.join()
+print(result)
+```
 ### GIL?
 ### Virtualenv +-?
 ### PEP8 codestyle
 ### unit test
+```python
+import unittest
+
+
+class MyArray:
+
+  def __init__(self, arr):
+    self.array = arr
+
+  def size(self):
+    return len(self.array)
+
+  def sum(self):
+    return sum(self.array)
+
+
+class TestMyArray(unittest.TestCase):
+
+  def setUp(self):
+    self.arr1 = [1, 3, 2]
+    self.arr2 = [3, 7, 3, 4]
+    self.arr3 = [200, 10, 1]
+
+  def test1(self):
+    self.assertEqual(MyArray(self.arr1).size(), 3)
+    self.assertEqual(MyArray(self.arr2).size(), 4)
+    self.assertEqual(MyArray(self.arr3).size(), 3)
+
+  def test2(self):
+    self.assertEqual(MyArray(self.arr1).sum(), 6)
+    self.assertEqual(MyArray(self.arr2).sum(), 17)
+    self.assertEqual(MyArray(self.arr3).sum(), 211)
+
+
+unittest.main()
+```
 ### py.test
 
 ## 5
@@ -204,13 +279,13 @@ class MyArray:
         # TODO
 
     def max(self):
-        #TODO
+        # TODO
 
     def min(self):
         # TODO
 
     def desc(self):
-        #TODO
+        # TODO
 
     def asc(self):
         # TODO
@@ -222,16 +297,16 @@ class MyArray:
         # TODO
 
     def uniq(self):
-        #TODO
+        # TODO
 
     def divide_on_ten(self):
-        #TODO
+        # TODO
 
     def chars(self):
         # TODO
 
     def switch(self):
-        #TODO
+        # TODO
 
     def before_min(self):
         # TODO
