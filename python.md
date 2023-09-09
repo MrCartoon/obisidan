@@ -232,10 +232,89 @@ class TestMyArray(unittest.TestCase):
 unittest.main()
 ```
 ### py.test
+```python
+import pytest
 
+class MyArray:
+
+  def __init__(self, arr):
+    self.array = arr
+
+  def size(self):
+    return len(self.array)
+
+  def sum(self):
+    return sum(self.array)
+
+@pytest.fixture
+def setup_variables():
+  return [1, 3, 2], [3, 7, 3, 4], [200, 10, 1]
+
+def test_size(setup_variables):
+  arr1, arr2, arr3 = setup_variables
+  assert MyArray(arr1).size() == 3
+  assert MyArray(arr2).size() == 4
+  assert MyArray(arr3).size() == 3
+
+def test_sum(setup_variables):
+  arr1, arr2, arr3 = setup_variables
+  assert MyArray(arr1).sum() == 6
+  assert MyArray(arr2).sum() == 17
+  assert MyArray(arr3).sum() == 211
+```
 ## 5
-### Scrapping: basic requests, scrappy
+### Scrapping: basic requests, scrapy
+```bash
+pip install scrapy
+scrapy startproject ragul
+cd ragul
+scrapy genspider church https://godsglory.church/
+```
+`ragul/items.php`
+```python
++++
 
+class InstItem(scrapy.Item):
+    username = scrapy.Field()
+    url = scrapy.Field()
+```
+`ragul/spiders/church.py`
+```python
++++
+
+from ragul.items import InstItem
+
+class ChurchSpider(scrapy.Spider):
+    name = "church"
+    allowed_domains = ["godsglory.church"]
+    start_urls = ["https://godsglory.church/"]
+
+    def parse(self, response):
+        for link in response.css('.sidebar-block.typography a'):
+            item = InstItem()
+            item['username'] = link.css('::text').get()
+            item['url'] = link.css('::attr(href)').get()
+            yield item
+```
+`ragul/settings.py`
+```python
++++
+
+FEED_FORMAT = 'json'
+FEED_URI = 'output.json'
+```
+
+```bash
+scrapy crawl church
+```
+Вивід `output.json`
+```json
+[
+{"username": "@gods_glory_church_if", "url": "https://www.instagram.com/gods_glory_church_if/"},
+{"username": "@glory.church.lv", "url": "https://www.instagram.com/glory.church.lv/"},
+{"username": "@gloryckorg", "url": "https://www.instagram.com/gloryckorg/"}
+]
+```
 ## HW1
 ### В класі ’Lesson1’
 - Реалізувати метод `(sum)` для підрахування суми з всіх цифр вхідного параметру.
